@@ -16,7 +16,10 @@ $(function (){
                             $.each(jokegoeshere, function(i,order){
                                 $jokegoeshere.html(order.joke);
                             });
-			}
+			},
+                        error: function() {
+                            alert('Error al cargar chistes');
+                        }
 		});		
 	}
 	
